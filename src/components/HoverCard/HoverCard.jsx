@@ -4,17 +4,8 @@ import { useSelector } from "react-redux";
 const HoverCard = () => {
   const users = useSelector((state) => state.users);
   const id = useSelector((state) => state.selectedId);
-  // console.log("selected id: " + id);
 
-  // const user = users[id];
   const user = users.find((user) => user.id === id) || [];
-  // console.log(typeof user);
-
-  // console.log(
-  //   "users",
-  //   users.find((user) => user.id === id)
-  // );
-  // console.log(users);
 
   if (typeof id !== "number") {
     return (

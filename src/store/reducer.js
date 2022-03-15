@@ -116,7 +116,6 @@ const initialUsersState = {
 
 const hoverHandlerReducer = (state = initialUsersState, action) => {
   if (action.type === "onMouseOver") {
-    console.log(action.payload);
     return {
       ...state,
       selectedId: action.payload,

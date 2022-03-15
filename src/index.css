@@ -6,10 +6,9 @@
 
 body {
   display: flex;
-  justify-content:center;
-  align-items:center;
-  margin:10px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
   background-color: #dee1e9;
   font-family: arial !important;
-  /* line-height:0.5 */
 }

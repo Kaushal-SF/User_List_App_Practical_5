@@ -2,7 +2,7 @@ import styles from "./UserListItems.module.css";
 import { Lock } from "react-feather";
 import { Trash2 } from "react-feather";
 import { useDispatch } from "react-redux";
-import {mouseHover,removeUser}  from "../../store/actions";
+import { mouseHover, removeUser } from "../../store/actions";
 
 const Users = (props) => {
   const dispatch = useDispatch();
@@ -16,10 +16,7 @@ const Users = (props) => {
           onMouseEnter={() => dispatch(mouseHover(props.id))}
         />
         <div className={styles.nameEmail}>
-          <p className={styles.name}>
-            {props.fname}
-            {props.lname}
-          </p>
+          <p className={styles.name}>{`${props.fname} ${props.lname}`}</p>
           <p className={styles.email}>{props.email}</p>
         </div>
       </div>
